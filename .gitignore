@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-NatureQFramework/[Ll]ibrary/
-NatureQFramework/[Tt]emp/
-NatureQFramework/[Oo]bj/
-NatureQFramework/[Bb]uild/
-NatureQFramework/[Bb]uilds/
-NatureQFramework/[Ll]ogs/
-NatureQFramework/[Uu]ser[Ss]ettings/
+DoYouFramework/[Ll]ibrary/
+DoYouFramework/[Tt]emp/
+DoYouFramework/[Oo]bj/
+DoYouFramework/[Bb]uild/
+DoYouFramework/[Bb]uilds/
+DoYouFramework/[Ll]ogs/
+DoYouFramework/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
