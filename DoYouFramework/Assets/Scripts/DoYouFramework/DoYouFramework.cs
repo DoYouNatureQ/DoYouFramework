@@ -17,7 +17,7 @@ namespace DoYouFramework
     /// 泛型单例
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class Singleton<T> where T : class, new()
+    public class Singleton<T> : MonoBehaviour where T : class, new()
     {
         private static T m_Instance;
 
@@ -34,12 +34,12 @@ namespace DoYouFramework
     /// <summary>
     /// 统一延迟调用方法
     /// </summary>
-    public class CallMethod
+    public class Calls : Singleton<Calls>
     {
         public delegate void CallEvents();
         public void Invoke(CallEvents callEvents, float _time)
         {
-            MonoSub.instance.StartCoroutine(WaitCall(callEvents, _time));
+            StartCoroutine(WaitCall(callEvents, _time));
         }
 
         public IEnumerator WaitCall(CallEvents callEvents, float _time)
